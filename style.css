@@ -14,6 +14,10 @@ body {
   font-family: "poppins", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 a,
 button {
   padding: 0;
@@ -399,7 +403,7 @@ button {
 
   .home__title h1 {
     font-size: 55px;
-    line-height: 47.5px;
+    line-height: 60px;
   }
 
   .home__title p {
@@ -591,6 +595,14 @@ button {
   transition: opacity 0.4s;
 }
 
+.portfolio__card__inner .home__cta span {
+  font-size: 20px;
+  letter-spacing: 0.3px;
+  line-height: 20px;
+  padding: 20px 40px;
+  cursor: none;
+}
+
 @media only screen and (min-width: 694px) {
   .portfolio__card__inner {
     padding: 3rem 2.5rem 1rem;
@@ -663,7 +675,7 @@ button {
   font-weight: 400;
 }
 
-/* .scroller::-webkit-scrollbar {
+/* .scroller__wrapper::-webkit-scrollbar {
   display: none;
 } */
 
@@ -740,6 +752,33 @@ button {
   font-size: 4rem;
   font-weight: 700;
   margin-bottom: 20px;
+}
+
+.blue-text h1 {
+  color: #00b091;
+}
+
+.blue-text .home__cta span {
+  background-color: #00b091;
+  /* color: #fff; */
+}
+
+.red-text h1 {
+  color: #147ed0;
+}
+
+.red-text .home__cta span {
+  background-color: #147ed0;
+  /* color: #fff; */
+}
+
+.orange-text h1 {
+  color: #e0b976;
+}
+
+.orange-text .home__cta span {
+  background-color: #e0b976;
+  /* color: #fff; */
 }
 
 .panel-text p {
@@ -834,6 +873,12 @@ button {
   background-image: none;
 }
 
+@media (max-width: 780px) {
+  .p-wrap {
+    display: none;
+  }
+}
+
 @media (max-width: 480px) {
   .scroller__wrapper {
     margin-top: 50px;
@@ -841,6 +886,10 @@ button {
 
   .started__title h1 {
     font-size: 3rem;
+  }
+
+  .started__title p {
+    font-size: 1.5rem;
   }
 
   .p-wrap {
@@ -892,7 +941,85 @@ button {
   font-weight: 600;
 }
 
+.contact__main__wrapper {
+  display: flex;
+  width: 100%;
+}
 
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* align-items: center; */
+  margin-left: 5S0px;
+}
+
+.contact__phone {
+  display: flex;
+  color: #00b091;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact__phone a {
+  text-decoration: none;
+}
+
+.contact__phone a:hover {
+  color: #00b091;
+}
+
+.contact__phone ion-icon {
+  margin-right: 20px;
+}
+
+.contact__mail {
+  display: flex;
+  color: #147ed0;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+
+}
+
+.contact__mail ion-icon {
+  margin-right: 20px;
+}
+
+.contact__mail a {
+  text-decoration: none;
+}
+
+.contact__mail a:hover {
+  color: #147ed0;
+}
+
+.contact__address {
+  display: flex;
+  color: #e0b976;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+
+}
+
+.contact__address ion-icon {
+  margin-right: 20px;
+  font-size: 4rem;
+}
+
+.contact__address a {
+  text-decoration: none;
+}
+
+.contact__address a:hover {
+  color: #e0b976;
+}
 
 /* ///// inputs /////*/
 
@@ -923,7 +1050,7 @@ textarea:valid~label {
 
 .styled-input label {
   color: #999;
-  padding: 1.3rem 30px 1rem 30px;
+  padding: 0.8rem 30px 1rem 30px;
   position: absolute;
   top: 10px;
   left: 0;
@@ -939,11 +1066,11 @@ textarea:valid~label {
 
 input,
 textarea {
-  padding: 30px;
+  padding: 20px;
   border: 0;
   width: 100%;
   font-size: 1rem;
-  background-color: #2d2d2d;
+  background-color: rgba(45, 45, 45, 0.9);
   color: white;
   border-radius: 4px;
 }
@@ -979,13 +1106,13 @@ textarea {
   position: relative;
   pointer-events: auto;
   text-align: center;
-  padding: 15px 40px;
+  padding: 15px 30px;
   background-color: rgb(255, 255, 255);
   color: #050819;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.4px;
-  line-height: 30px;
+  /* line-height: 30px; */
   border-radius: 40px;
   cursor: pointer;
   margin-top: 30px;
@@ -1010,13 +1137,60 @@ textarea {
   }
 }
 
+@media (max-width: 780px) {
+  .contact__main__wrapper {
+    flex-direction: column;
+  }
+
+  .contact__info {
+    margin-left: 0px;
+  }
+
+  .contact__phone {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact__mail {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+
+  }
+
+  .contact__mail ion-icon {
+    margin-right: 20px;
+  }
+
+
+  .contact__address {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+
+  }
+
+  .contact__address p {
+    font-size: 1.2rem;
+  }
+
+  .contact__address ion-icon {
+    margin-right: 20px;
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 480px) {
   .contact {
-    margin-top: 150px;
+    margin-top: 50px;
   }
 
   .contact__title h1 {
     font-size: 3rem;
+  }
+
+  .contact__address ion-icon {
+    margin-right: 20px;
+    font-size: 4rem;
   }
 }
 
@@ -1028,4 +1202,8 @@ input[type="checkbox"]+label {
 input[type="checkbox"]:checked+label {
   color: #f00;
   font-style: normal;
+}
+
+footer {
+  margin-top: 100px;
 }

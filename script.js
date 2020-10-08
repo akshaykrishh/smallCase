@@ -20,7 +20,7 @@ $(document).ready(function () {
     ScrollTrigger.matchMedia({
 
         // desktop
-        "(min-width: 760px)": function () {
+        "(min-width: 480px)": function () {
             gsap.set(".panel", {
                 zIndex: (i, target, targets) => targets.length - i
             });
@@ -33,7 +33,7 @@ $(document).ready(function () {
 
                     scrollTrigger: {
                         trigger: "section.black",
-                        // scroller: ".scroller",
+                        scroller: false,
                         scroller: false,
                         start: () => "top -" + (window.innerHeight * (i + 0.5)),
                         end: () => "+=" + window.innerHeight,
