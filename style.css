@@ -1,6 +1,4 @@
 html {
-  /* font-size: 62.5% */
-  scroll-behavior: smooth;
   color: #fff;
 }
 
@@ -17,6 +15,12 @@ body {
 a {
   text-decoration: none;
 }
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 
 a,
 button {
@@ -35,7 +39,8 @@ button {
 
 .navbar {
   padding: 1rem 0;
-  z-index: 2000;
+  z-index: 20001;
+  /* position: absolute; */
 }
 
 .navbar #mainMenu li>a {
@@ -89,10 +94,10 @@ button {
 }
 
 .main-header {
-  position: relative;
+  position: absolute;
   /* top: 25px; */
   left: 0;
-  z-index: 99;
+  z-index: 200001;
   width: 100%;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -302,7 +307,7 @@ button {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 20%;
 }
 
 .home__title h1 {
@@ -362,10 +367,11 @@ button {
 }
 
 .coinOne {
+  overflow: hidden;
   position: absolute;
   bottom: -20%;
   right: -1%;
-  z-index: 1;
+  z-index: -1;
 }
 
 .coinTwo {
@@ -383,7 +389,17 @@ button {
   width: 200px;
 }
 
+@media screen and (max-width: 1024px) {
+  .home__title {
+    margin-top: 30%;
+  }
+}
+
 @media screen and (max-width: 780px) {
+  .home__title {
+    margin-top: 40%;
+  }
+
   .home__title h1 {
     font-size: 6rem;
     color: #fff;
@@ -394,11 +410,12 @@ button {
 
 @media screen and (max-width: 480px) {
   .home {
-    height: 90vh;
+    min-height: 100vh;
   }
 
   .home__title {
     text-align: left;
+    margin-top: 200px;
   }
 
   .home__title h1 {
@@ -407,6 +424,7 @@ button {
   }
 
   .home__title p {
+    margin-top: 10px;
     font-size: 20px;
   }
 
@@ -416,6 +434,7 @@ button {
     line-height: 18px;
     padding: 16px 24px;
     cursor: none;
+    margin-top: 30px;
   }
 
   .coinOne {
@@ -429,6 +448,18 @@ button {
 
   .coinTwo img {
     width: 200px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .home__title {
+    min-height: 100vh;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  .home__title h1 {
+    font-size: 45px;
   }
 }
 
@@ -598,8 +629,8 @@ button {
 .portfolio__card__inner .home__cta span {
   font-size: 20px;
   letter-spacing: 0.3px;
-  line-height: 20px;
-  padding: 20px 40px;
+  line-height: 16px;
+  padding: 15px 30px;
   cursor: none;
 }
 
@@ -797,8 +828,9 @@ button {
 .p-wrap {
   position: relative;
   overflow: hidden;
-  width: 450px;
-  height: 80vh;
+  width: 350px;
+  height: 70vh;
+  border-radius: 30px;
 }
 
 .panel {
@@ -941,85 +973,7 @@ button {
   font-weight: 600;
 }
 
-.contact__main__wrapper {
-  display: flex;
-  width: 100%;
-}
 
-.contact__info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  /* align-items: center; */
-  margin-left: 5S0px;
-}
-
-.contact__phone {
-  display: flex;
-  color: #00b091;
-  flex-direction: row;
-  align-items: center;
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.contact__phone a {
-  text-decoration: none;
-}
-
-.contact__phone a:hover {
-  color: #00b091;
-}
-
-.contact__phone ion-icon {
-  margin-right: 20px;
-}
-
-.contact__mail {
-  display: flex;
-  color: #147ed0;
-  flex-direction: row;
-  align-items: center;
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-
-}
-
-.contact__mail ion-icon {
-  margin-right: 20px;
-}
-
-.contact__mail a {
-  text-decoration: none;
-}
-
-.contact__mail a:hover {
-  color: #147ed0;
-}
-
-.contact__address {
-  display: flex;
-  color: #e0b976;
-  flex-direction: row;
-  align-items: center;
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-
-}
-
-.contact__address ion-icon {
-  margin-right: 20px;
-  font-size: 4rem;
-}
-
-.contact__address a {
-  text-decoration: none;
-}
-
-.contact__address a:hover {
-  color: #e0b976;
-}
 
 /* ///// inputs /////*/
 
@@ -1206,4 +1160,14 @@ input[type="checkbox"]:checked+label {
 
 footer {
   margin-top: 100px;
+}
+
+.footer__contact p {
+  margin: 2rem 0;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.footer__contact ion-icon {
+  margin-right: 1rem;
 }
