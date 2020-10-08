@@ -20,7 +20,7 @@ $(document).ready(function () {
     ScrollTrigger.matchMedia({
 
         // desktop
-        "(min-width: 800px)": function () {
+        "(min-width: 760px)": function () {
             gsap.set(".panel", {
                 zIndex: (i, target, targets) => targets.length - i
             });
