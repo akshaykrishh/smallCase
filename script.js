@@ -1,6 +1,25 @@
 $(document).ready(function () {
 
     gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to(".coinOne", {
+        scrollTrigger: {
+            trigger: ".home",
+            scrub: true
+        },
+        rotation: 240,
+        duration: 1
+    })
+
+    gsap.to(".coinTwo", {
+        scrollTrigger: {
+            trigger: ".home",
+            scrub: true
+        },
+        rotation: 120,
+        duration: 1
+    })
+
     ScrollTrigger.matchMedia({
 
         // desktop
