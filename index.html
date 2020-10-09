@@ -315,28 +315,29 @@
         <h1>Contact Us</h1>
       </div>
       <div class="contact__main__wrapper">
+        <form action="">
         <div class="row input-container">
           <div class="col-sm-12" style="padding: 0">
             <div class="styled-input wide">
-              <input type="text" required />
+              <input type="text" required name="name" />
               <label>Name</label>
             </div>
           </div>
           <div class="col-md-6 col-sm-12" style="padding: 0">
             <div class="styled-input">
-              <input type="text" required />
+              <input type="email" name="email" required />
               <label>Email</label>
             </div>
           </div>
           <div class="col-md-6 col-sm-12" style="padding: 0">
             <div class="styled-input" style="float: right">
-              <input type="text" required />
+              <input type="text" name="phone" required />
               <label>Phone Number</label>
             </div>
           </div>
           <div class="col-sm-12" style="padding: 0">
             <div class="styled-input wide">
-              <textarea required></textarea>
+              <textarea name="message" required></textarea>
               <label>Message</label>
             </div>
           </div>
@@ -344,6 +345,7 @@
             <button class="btn-lrg submit-btn" type="submit"  >Send Message </button>
           </div>
         </div>
+        </form>
       </div>
 
     </div>

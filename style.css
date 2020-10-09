@@ -960,6 +960,7 @@ button {
 
 .profile {
   margin: 2rem 2rem;
+  text-align: center;
 }
 
 .profile .profile-img {
@@ -1029,8 +1030,8 @@ button {
   }
 
   .profile .profile-img {
-    height: 260px;
-    width: 260px;
+    height: 200px;
+    width: 200px;
   }
 }
 /* ends */
