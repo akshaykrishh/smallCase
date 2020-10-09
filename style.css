@@ -1243,3 +1243,9 @@ footer {
 .footer__contact ion-icon {
   margin-right: 1rem;
 }
+
+@media (max-width: 480px) {
+  .footer__contact {
+   display: none;
+  }
+}
