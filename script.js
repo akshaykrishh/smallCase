@@ -120,7 +120,9 @@ $(document).ready(function () {
         e.preventDefault();
     })
 
-    document.querySelector('.toggler').onclick = () => {
-        document.querySelector('.nav').classList.toggle('open');
+    window.onload = function(){
+        document.querySelector('.toggler').onclick = () => {
+            document.querySelector('.nav').classList.toggle('open');
+        }
     }
 })
