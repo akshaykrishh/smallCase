@@ -459,7 +459,7 @@ button {
 /* About Us Section */
 .about {
   height: auto;
-  margin: 110px 0 0;
+  margin: 110px 0 110px;
   position: relative;
   overflow-x: hidden;
 }
@@ -474,7 +474,8 @@ button {
   float: right;
   width: 80%;
   /* text-align: center; */
-  margin: 0 auto;
+  margin: 0 auto 50px;
+
   /* right: -210px; */
   top: -10px;
   z-index: 10;
@@ -482,7 +483,7 @@ button {
 
 .about__main {
   position: relative;
-  top: -60px;
+  /* top: -60px; */
   z-index: 20;
 }
 
