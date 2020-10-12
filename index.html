@@ -315,7 +315,8 @@
         <h1>Contact Us</h1>
       </div>
       <div class="contact__main__wrapper">
-        <form action="">
+        <form name="contact" method="POST" data-netlify="true">
+             <input type="hidden" id="subject" name="subject" value="Default subject">
         <div class="row input-container">
           <div class="col-sm-12" style="padding: 0">
             <div class="styled-input wide">
@@ -327,6 +328,7 @@
             <div class="styled-input">
               <input type="email" name="email" required />
               <label>Email</label>
+              
             </div>
           </div>
           <div class="col-md-6 col-sm-12" style="padding: 0">
@@ -342,6 +344,7 @@
             </div>
           </div>
           <div class="col-xs-12">
+               
             <button class="btn-lrg submit-btn" type="submit"  >Send Message </button>
           </div>
         </div>
