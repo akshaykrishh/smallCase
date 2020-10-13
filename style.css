@@ -31,6 +31,15 @@ button {
   cursor: pointer;
 }
 
+.lazyloading{
+  opacity: 0;
+}
+
+.lazyloaded{
+  opacity: 1;
+  transition: 2s;
+}
+
 /* main-header start */
 [data-target="#mainMenu"] {
   position: relative;
