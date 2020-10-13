@@ -37,7 +37,7 @@ button {
 
 .lazyloaded{
   opacity: 1;
-  transition: 2s;
+  transition: 0.5s;
 }
 
 /* main-header start */
