@@ -37,7 +37,6 @@ $(document).ready(function () {
                     scrollTrigger: {
                         trigger: "section.black",
                         scroller: false,
-                        scroller: false,
                         start: () => "top -" + (window.innerHeight * (i + 0.5)),
                         end: () => "+=" + window.innerHeight,
                         scrub: true,
@@ -82,8 +81,9 @@ $(document).ready(function () {
                 tl
                     .to(text, {
                         duration: 1,
+                        zIndex: 100,
                         opacity: 1,
-                        y: "20%"
+                        y: "10%"
                     })
                     .to(text, {
                         duration: 1,

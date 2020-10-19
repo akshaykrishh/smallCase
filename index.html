@@ -5,537 +5,550 @@
 <!DOCTYPE html>
 <html class="no-js preload" lang="en">
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <!-- Metas -->
-  <title>SmallCase | Conscience Investing</title>
+    <!-- Metas -->
+    <title>SmallCase | Conscience Investing</title>
 
-  <meta name="description" content="Smallcase is a technology platform which helps create a customised
+    <meta name="description" content="Smallcase is a technology platform which helps create a customised
   basket of securities that reflect an idea, weighted intelligently to
   track a theme, strategy or objective" />
 
-  <meta property="og:site_name" content="SmallCase" />
-  <meta property="og:title" content="SmallCase | Conscience Investing" />
-  <meta property="og:description" content="Smallcase is a technology platform which helps create a customised
+    <meta property="og:site_name" content="SmallCase" />
+    <meta property="og:title" content="SmallCase | Conscience Investing" />
+    <meta property="og:description" content="Smallcase is a technology platform which helps create a customised
   basket of securities that reflect an idea, weighted intelligently to
   track a theme, strategy or objective" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="" />
-  <meta property="og:image" content="./imgs/logos/Conscience Investing Logo.png" />
-  <meta property="og:image:width" content="500" />
-  <meta property="og:image:height" content="98" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="./imgs/logos/Conscience Investing Logo.png" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="98" />
 
-  <!-- <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="" />
-  <meta name="twitter:creator" content="" />
-  <meta name="twitter:title" content="" />
-  <meta name="twitter:description" content="" />
-  <meta name="twitter:image" content="" /> -->
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Viewport -->
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.1.5/lazysizes.min.js"></script>
+    <link href="./style.css" rel=" stylesheet" />
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.1.5/lazysizes.min.js"></script>
-  <link href="./style.css" rel=" stylesheet" />
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./imgs/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./imgs/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./imgs/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./imgs/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./imgs/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  </head>
 
-  <!-- Icons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./imgs/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./imgs/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./imgs/favicon/favicon-16x16.png">
-  <link rel="manifest" href="./imgs/favicon/site.webmanifest">
-  <link rel="mask-icon" href="./imgs/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-</head>
+  <body>
+    <header class="main-header">
+      <nav class="navbar navbar-expand-lg main-nav px-0">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="imgs/logos/Conscience Investing Logo.png" alt="Conscience Investing Logo" />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu"
+            aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar icon-bar-1"></span>
+            <span class="icon-bar icon-bar-2"></span>
+            <span class="icon-bar icon-bar-3"></span>
+          </button>
 
-<body>
-  <header class="main-header">
-    <nav class="navbar navbar-expand-lg main-nav px-0">
+          <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav ml-auto text-uppercase f1">
+              <li class="nav-link">
+                <a href="index.html" class="active active-first">Home</a>
+              </li>
+              <li class="nav-link">
+                <a href="#about">About</a>
+              </li>
+              <li class="nav-link">
+                <a href="#portfolio">Portfolios</a>
+              </li>
+              <li class="nav-link">
+                <a href="#team">Team</a>
+              </li>
+              <li class="nav-link">
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="home">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="imgs/logos/Conscience Investing Logo.png" alt="Conscience Investing Logo" />
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu"
-          aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="icon-bar icon-bar-1"></span>
-          <span class="icon-bar icon-bar-2"></span>
-          <span class="icon-bar icon-bar-3"></span>
-        </button>
+        <div class="home__title">
+          <h1>
+            <span class="first__line"> Begin your </span>
+            <br />
+            <span> investment journey today</span>
+            <br />
+            <!-- <span>with our</span> -->
+          </h1>
+          <p class="sec__line">with our Curated Stock Portfolios</p>
 
-        <div class="collapse navbar-collapse" id="mainMenu">
-          <ul class="navbar-nav ml-auto text-uppercase f1">
-            <li class="nav-link">
-              <a href="index.html" class="active active-first">Home</a>
-            </li>
-            <li class="nav-link">
-              <a href="#about">About</a>
-            </li>
-            <li class="nav-link">
-              <a href="#portfolio">Portfolios</a>
-            </li>
-            <li class="nav-link">
-              <a href="#team">Team</a>
-            </li>
-            <li class="nav-link">
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
+          <a class="home__cta" href="https://conscience.smallcase.com/" target="_blank" rel="noreferrer">
+            <span>Our SmallCase</span>
+          </a>
         </div>
-      </div>
-    </nav>
-  </header>
 
-  <div class="home">
-    <div class="container">
-      <div class="home__title">
-        <h1>
-          <span class="first__line"> Begin your </span>
-          <br />
-          <span> investment journey today</span>
-          <br />
-          <!-- <span>with our</span> -->
-        </h1>
-        <p class="sec__line">with our Curated Stock Portfolios</p>
-
-        <a class="home__cta" href="https://conscience.smallcase.com/" target="_blank" rel="noreferrer">
-          <span>Our SmallCase</span>
-        </a>
-      </div>
-
-      <div class="home_coinWrapper">
-        <div class="coinOne">
-          <img src="./imgs/svg/dollar.svg" alt="coin image" />
-        </div>
-        <div class="coinTwo">
-          <img src="./imgs/svg/dollar.svg" alt="coin image" />
+        <div class="home_coinWrapper">
+          <div class="coinOne">
+            <img src="./imgs/svg/dollar.svg" alt="coin image" />
+          </div>
+          <div class="coinTwo">
+            <img src="./imgs/svg/dollar.svg" alt="coin image" />
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="about" id="about" name="about">
-    <div class="container about__wrapper">
-      <div class="about__video embed-responsive embed-responsive-16by9">
-        <iframe title="Youtube Video Explaining SmallCase" class="embed-responsive-item lazyload" width="560" height="315"
-          data-src="https://www.youtube.com/embed/SFhRzLDPid0?lcontorls=0&autoplay=0&autohide=1&hd=1&modestbranding=1&wmode=opaque"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-      </div>
-      <div class="about__main">
-        <div class="about__title">
-          <!-- <h1>About</h1> -->
+    <div class="about" id="about" name="about">
+      <div class="container about__wrapper">
+        <div class="about__video embed-responsive embed-responsive-16by9">
+          <iframe title="Youtube Video Explaining SmallCase" class="embed-responsive-item lazyload" width="560"
+            height="315"
+            data-src="https://www.youtube.com/embed/SFhRzLDPid0?lcontorls=0&autoplay=0&autohide=1&hd=1&modestbranding=1&wmode=opaque"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
         </div>
-        <p>
-          Smallcase is a technology platform which helps create a customised
-          basket of securities that reflect an idea, weighted intelligently to
-          track a theme, strategy or objective.
-          <br>
-          <br>
-          The 'Conscience Investing' smallcase aims to be able to couple this superior technology with 'seamless execution & quality research'.
-        </p>
+        <div class="about__main">
+          <div class="about__title">
+            <!-- <h1>About</h1> -->
+          </div>
+          <p>
+            Smallcase is a technology platform which helps create a customised
+            basket of securities that reflect an idea, weighted intelligently to
+            track a theme, strategy or objective.
+            <br>
+            <br>
+            The 'Conscience Investing' smallcase aims to be able to couple this superior technology with 'seamless
+            execution & quality research'.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="portfolio" id="portfolio">
-    <!-- <div class="coinThree">
+    <div class="portfolio" id="portfolio">
+      <!-- <div class="coinThree">
       <img src="./imgs/dollar.svg" alt="coin image">
     </div> -->
-    <div class="container">
-      <div class="portfolio__title">
-        <h1>Portfolios</h1>
-      </div>
-      <div class="portfolio__content">
-        <div class="portfolio__wrapper">
-          <div class="portfolio__card">
-            <div class="portfolio__card__inner">
-              <img data-src="./imgs/logos/Curate.png" class="lazyload" alt="Curate Portfolio Logo" />
-              <div class="card__text">
-                <p>
-                  'Actively' managed Multi-Cap portfolio adapting growth and
-                  value based investing styles, with focus on quality,
-                  'consistent compounding' and techno-funda parameters.
-                  Entry-Exit is as important as stock selection!
-                </p>
+      <div class="container">
+        <div class="portfolio__title">
+          <h1>Portfolios</h1>
+        </div>
+        <div class="portfolio__content">
+          <div class="portfolio__wrapper">
+            <div class="portfolio__card">
+              <div class="portfolio__card__inner">
+                <img data-src="./imgs/logos/Curate.png" class="lazyload" alt="Curate Portfolio Logo" />
+                <div class="card__text">
+                  <p>
+                    'Actively' managed Multi-Cap portfolio adapting growth and
+                    value based investing styles, with focus on quality,
+                    'consistent compounding' and techno-funda parameters.
+                    Entry-Exit is as important as stock selection!
+                  </p>
+                </div>
+                <a class="home__cta" rel="noreferrer" href="https://conscience.smallcase.com/smallcase/CONMO_0003"
+                  target="_blank">
+                  <span>Access Curate</span>
+                </a>
               </div>
-              <a class="home__cta" rel="noreferrer" href="https://conscience.smallcase.com/smallcase/CONMO_0003" target="_blank">
-                <span>Access Curate</span>
-              </a>
             </div>
-          </div>
-          <div class="portfolio__card">
-            <div class="portfolio__card__inner">
-              <img data-src="./imgs/logos/Saatvic1.png"  class="lazyload" alt="Saatvic Portfolio Logo" />
-              <div class="card__text">
-                <p>
-                  Concentrated Cap-Agnostic portfolio sensitive to the
-                  value systems of socially responsible investors. We have
-                  carefully curated a basket of clean stocks that do not
-                  violate their principles, having strong universe filter
-                  against; Alcohol, Tobacco, Gambling, Defence, Hatcheries,
-                  Pesticides etc.
-                </p>
+            <div class="portfolio__card">
+              <div class="portfolio__card__inner">
+                <img data-src="./imgs/logos/Saatvic1.png" class="lazyload" alt="Saatvic Portfolio Logo" />
+                <div class="card__text">
+                  <p>
+                    Concentrated Cap-Agnostic portfolio sensitive to the
+                    value systems of socially responsible investors. We have
+                    carefully curated a basket of clean stocks that do not
+                    violate their principles, having strong universe filter
+                    against; Alcohol, Tobacco, Gambling, Defence, Hatcheries,
+                    Pesticides etc.
+                  </p>
+                </div>
+                <a class="home__cta" href="https://conscience.smallcase.com/smallcase/CONMO_0001" rel="noreferrer"
+                  target="_blank">
+                  <span>Access Saatvic</span>
+                </a>
               </div>
-              <a class="home__cta" href="https://conscience.smallcase.com/smallcase/CONMO_0001" rel="noreferrer" target="_blank">
-                <span>Access Saatvic</span>
-              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="scroller__wrapper">
-    <div class="scroller">
-      <!-- <section class="orange">
+    <div class="scroller__wrapper">
+      <div class="scroller">
+        <!-- <section class="orange">
       <div class="text">This is some text inside of a div block.</div>
     </section> -->
-      <div class="container">
-        <div class="started__title">
-          <h1>Get Started</h1>
-          <p>in 3 simple steps</p>
-        </div>
-        <section class="black">
-          <div class="text-wrap">
-            <div class="panel-text blue-text">
-              <h1>Choose</h1>
-              <p>
-                Choose a suitable portfolio that matches your investment
-                objective.
-              </p>
-              <!-- <a class="home__cta" href="https://conscience.smallcase.com/" target="_blank">
-                <span>Choose Your Portfolio</span>
-              </a> -->
-            </div>
-            <div class="panel-text red-text">
-              <h1>Subscribe</h1>
-              <p>
-                Subscribe to the portfolio & get access to the constituent
-                stocks & weights.
-              </p>
-              <!-- <a class="home__cta" href="https://conscience.smallcase.com/" target="_blank">
+        <div class="container">
+          <div class="started__title">
+            <h1>Get Started</h1>
+            <p>in 3 simple steps</p>
+          </div>
+          <section class="black">
+            <div class="text-wrap">
+              <div class="panel-text blue-text">
+                <h1>Choose</h1>
+                <p>
+                  Choose a suitable portfolio that matches your investment
+                  objective.
+                </p>
+                <!-- <a class="home__cta" href="https://conscience.smallcase.com/" target="_blank">
+                  <span>Choose Your Portfolio</span>
+                </a> -->
+              </div>
+              <div class="panel-text red-text">
+                <h1>Subscribe</h1>
+                <p>
+                  Subscribe to the portfolio & get access to the constituent
+                  stocks & weights.
+                </p>
+                <!-- <a class="home__cta" href="https://conscience.smallcase.com/" target="_blank">
                 <span>Subscribe Now</span>
               </a> -->
+              </div>
+              <div class="panel-text orange-text">
+                <h1>Invest</h1>
+                <p>
+                  Invest in the portfolio & apply regular portfolio updates. Set
+                  up SIP for disciplined investing.
+                </p>
+                <a class="home__cta" href="https://conscience.smallcase.com/" target="_blank" rel="noreferrer">
+                  <span>Start Investing</span>
+                </a>
+              </div>
             </div>
-            <div class="panel-text orange-text">
-              <h1>Invest</h1>
-              <p>
-                Invest in the portfolio & apply regular portfolio updates. Set
-                up SIP for disciplined investing.
-              </p>
-              <a class="home__cta" href="https://conscience.smallcase.com/" target="_blank" rel="noreferrer">
-                <span>Start Investing</span>
-              </a>
-            </div>
-          </div>
 
-          <div class="p-wrap">
-            <!-- <div class="panel orange"></div> -->
-            <div class="pp-wrap">
-              <div class="panel blue"></div>
-              <div class="panel red"></div>
-              <div class="panel orange"></div>
+            <div class="p-wrap">
+              <!-- <div class="panel orange"></div> -->
+              <div class="pp-wrap">
+                <div class="panel blue"></div>
+                <div class="panel red"></div>
+                <div class="panel orange"></div>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
+        <!-- <section class="blue"></section> -->
       </div>
-      <!-- <section class="blue"></section> -->
     </div>
-  </div>
 
-  <div class="team" id="team">
-    <div class="about-container container">
+    <div class="team" id="team">
+      <div class="about-container container">
         <div class="about-heading">
-            <h1>Research Team</h1>
+          <h1>Research Team</h1>
         </div>
         <div class="team-container">
-            <div class="profiles">
-              <div class="profile">
-                <img data-src="imgs/team/Sriram Sekhar.jpg" class="profile-img lazyload" alt="Sriram Sekhar">
-                <h3 class="user-name">Sriram <br> Sekhar</h3>
-                <!-- <h5>Msc.Finance, <br> Univ. of Nottingham</h5> -->
-                <div class="social-links">
-                    <a rel="noreferrer" href="https://www.linkedin.com/in/sekharsriram/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-                    
-                </div>
+          <div class="profiles">
+            <div class="profile">
+              <img data-src="imgs/team/Sriram Sekhar.jpg" class="profile-img lazyload" alt="Sriram Sekhar">
+              <h3 class="user-name">Sriram <br> Sekhar</h3>
+              <!-- <h5>Msc.Finance, <br> Univ. of Nottingham</h5> -->
+              <div class="social-links">
+                <a rel="noreferrer" href="https://www.linkedin.com/in/sekharsriram/" target="_blank">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+
+              </div>
             </div>
             <div class="profile">
               <img data-src="imgs/team/RS.jpg" class="profile-img lazyload" alt="Ronak Shah">
               <h3 class="user-name">Ronak <br> Shah</h3>
               <!-- <h5>CFA</h5> -->
               <div class="social-links">
-                  <a rel="noreferrer" href="https://www.linkedin.com/in/connectwithronakshah/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-                  
+                <a rel="noreferrer" href="https://www.linkedin.com/in/connectwithronakshah/" target="_blank">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+
               </div>
-          </div>
-                <div class="profile">
-                    <img data-src="imgs/team/VS.jpg" class="profile-img lazyload" alt="Vignesh Sundararaman">
-                    <h3 class="user-name">Vignesh <br> Sundararaman</h3>
-                    <!-- <h5>CMA CWM</h5> -->
-                    <div class="social-links">
-                        <a rel="noreferrer" href="https://www.linkedin.com/in/connectwithvigneshs/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-                       
-                    </div>
-                </div>
-                <div class="profile">
-                  <img data-src="imgs/team/Sriram Bharadhwaj.jpeg" class="profile-img lazyload" alt="Sriram Bharadhwaj">
-                  <h3 class="user-name">Sriram <br> Bharadhwaj</h3>
-                  <!-- <h5>GMP, <br> Harvard Business School</h5> -->
-                  <div class="social-links">
-                      <a rel="noreferrer" href="https://www.linkedin.com/in/srirambharadhwaj/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-                  </div>
-              </div>
-                
-                <div class="profile">
-                  <img data-src="imgs/team/Lalit Kumar Rathi.jpg" class="profile-img lazyload" alt="Lalit Kumar  Rathi">
-                  <h3 class="user-name">Lalit <br> Kumar  Rathi</h3>
-                  <!-- <h5>ACA CMA CFM</h5> -->
-                  <div class="social-links">
-                      <a rel="noreferrer" href="https://www.linkedin.com/in/lalit-kumar-rathi-63694840/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-                     
-                  </div>
-              </div>
-                
-                
-                
-              
             </div>
-        </div>
-    </div>
-</div>
+            <div class="profile">
+              <img data-src="imgs/team/VS.jpg" class="profile-img lazyload" alt="Vignesh Sundararaman">
+              <h3 class="user-name">Vignesh <br> Sundararaman</h3>
+              <!-- <h5>CMA CWM</h5> -->
+              <div class="social-links">
+                <a rel="noreferrer" href="https://www.linkedin.com/in/connectwithvigneshs/" target="_blank">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+
+              </div>
+            </div>
+            <div class="profile">
+              <img data-src="imgs/team/Sriram Bharadhwaj.jpg" class="profile-img lazyload" alt="Sriram Bharadhwaj">
+              <h3 class="user-name">Sriram <br> Bharadhwaj</h3>
+              <!-- <h5>GMP, <br> Harvard Business School</h5> -->
+              <div class="social-links">
+                <a rel="noreferrer" href="https://www.linkedin.com/in/srirambharadhwaj/" target="_blank">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </div>
+            </div>
+
+            <div class="profile">
+              <img data-src="imgs/team/Lalit Kumar Rathi.jpg" class="profile-img lazyload" alt="Lalit Kumar  Rathi">
+              <h3 class="user-name">Lalit <br> Kumar Rathi</h3>
+              <!-- <h5>ACA CMA CFM</h5> -->
+              <div class="social-links">
+                <a rel="noreferrer" href="https://www.linkedin.com/in/lalit-kumar-rathi-63694840/" target="_blank">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+
+              </div>
+            </div>
 
 
-  <div class="contact" id="contact">
-    <div class="container">
-      <div class="contact__title">
-        <h1>Contact Us</h1>
-      </div>
-      <div class="contact__main__wrapper">
-        <form name="contact" method="POST" data-netlify="true">
-             <input type="hidden" id="subject" name="subject" value="Default subject">
-        <div class="row input-container">
-          <div class="col-sm-12" style="padding: 0">
-            <div class="styled-input wide">
-              <input type="text" required name="name" />
-              <label>Name</label>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12" style="padding: 0">
-            <div class="styled-input">
-              <input type="email" name="email" required />
-              <label>Email</label>
-              
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12" style="padding: 0">
-            <div class="styled-input" style="float: right">
-              <input type="text" name="phone" required />
-              <label>Phone Number</label>
-            </div>
-          </div>
-          <div class="col-sm-12" style="padding: 0">
-            <div class="styled-input wide">
-              <textarea name="message" required></textarea>
-              <label>Message</label>
-            </div>
-          </div>
-          <div class="col-xs-12">
-               
-            <button class="btn-lrg submit-btn" type="submit"  >Send Message </button>
+
+
           </div>
         </div>
-        </form>
       </div>
-
     </div>
 
-  </div>
-  <!-- Footer -->
-  <footer class="page-footer font-small unique-color-dark" style="background-color: #000;">
 
-    <div style="background-color: #00b091;">
+    <div class="contact" id="contact">
       <div class="container">
-
-        <!-- Grid row-->
-        <div class="row py-4 d-flex align-items-center">
-
-          <!-- Grid column -->
-          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-            <h6 class="mb-0">Let's Connect!</h6>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-6 col-lg-7 text-center text-md-right">
-
-
-            <!-- Twitter -->
-            <a class="tw-ic" style="font-size: 1.5rem;" rel="noreferrer" href="https://twitter.com/consciencemfo" target="_blank">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-
-            <!--Linkedin -->
-            <a class="li-ic" style="font-size: 1.5rem;" rel="noreferrer" href="https://www.linkedin.com/company/consciencemfo/" target="_blank">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-            <!--Instagram-->
-            <a class="ins-ic" style="font-size: 1.5rem;" rel="noreferrer" href="https://www.instagram.com/consciencemfo/ " target="_blank">
-              <ion-icon name="logo-instagram">
-              </ion-icon>
-            </a>
-
-          </div>
-          <!-- Grid column -->
-
+        <div class="contact__title">
+          <h1>Contact Us</h1>
         </div>
-        <!-- Grid row-->
+        <div class="contact__main__wrapper">
+          <form name="contact" method="POST" data-netlify="true">
+            <input type="hidden" id="subject" name="subject" value="Default subject">
+            <div class="row input-container">
+              <div class="col-sm-12" style="padding: 0">
+                <div class="styled-input wide">
+                  <input type="text" required name="name" />
+                  <label>Name</label>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12" style="padding: 0">
+                <div class="styled-input">
+                  <input type="email" name="email" required />
+                  <label>Email</label>
+
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12" style="padding: 0">
+                <div class="styled-input" style="float: right">
+                  <input type="text" name="phone" required />
+                  <label>Phone Number</label>
+                </div>
+              </div>
+              <div class="col-sm-12" style="padding: 0">
+                <div class="styled-input wide">
+                  <textarea name="message" required></textarea>
+                  <label>Message</label>
+                </div>
+              </div>
+              <div class="col-xs-12">
+
+                <button class="btn-lrg submit-btn" type="submit">Send Message </button>
+              </div>
+            </div>
+          </form>
+        </div>
 
       </div>
+
     </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small unique-color-dark" style="background-color: #000;">
+
+      <div style="background-color: #00b091;">
+        <div class="container">
+
+          <!-- Grid row-->
+          <div class="row py-4 d-flex align-items-center">
+
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+              <h6 class="mb-0">Let's Connect!</h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-7 text-center text-md-right">
 
 
+              <!-- Twitter -->
+              <a class="tw-ic" style="font-size: 1.5rem;" rel="noreferrer" href="https://twitter.com/consciencemfo"
+                target="_blank">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
 
-    <!-- Footer Links -->
-    <div class="container text-center text-md-left mt-5">
+              <!--Linkedin -->
+              <a class="li-ic" style="font-size: 1.5rem;" rel="noreferrer"
+                href="https://www.linkedin.com/company/consciencemfo/" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+              <!--Instagram-->
+              <a class="ins-ic" style="font-size: 1.5rem;" rel="noreferrer"
+                href="https://www.instagram.com/consciencemfo/ " target="_blank">
+                <ion-icon name="logo-instagram">
+                </ion-icon>
+              </a>
 
-      <!-- Grid row -->
-      <div class="row mt-3">
+            </div>
+            <!-- Grid column -->
 
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mb-4">
-
-          <!-- Content -->
-          <h6 class="text-uppercase font-weight-bold">About Us</h6>
-          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p>With over 4 decades of cumulative experience, ‘Conscience Investing’ Smallcase is actively managed by an
-            able team of professionals and advisors. The sole objective is to add maximum value to investors in their
-            wealth creation journey and aid in active and seamless portfolio management.</p>
+          </div>
+          <!-- Grid row-->
 
         </div>
-        <!-- Grid column -->
+      </div>
 
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
 
-          <!-- Links -->
-          <h6 class="text-uppercase font-weight-bold">Useful links</h6>
-          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p>
-            <a rel="noreferrer" href="https://conscience.smallcase.com/" target="_blank">SmallCase</a>
-          </p>
 
-          <p>
-            <a rel="noreferrer" href="https://conscience.smallcase.com/smallcase/CONMO_0003" target="_blank">Curate</a>
-          </p>
-          <p>
-            <a rel="noreferrer" href="https://conscience.smallcase.com/smallcase/CONMO_0001" target="_blank">Saatvic</a>
-          </p>
-          <!-- <p>
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left mt-5">
+
+        <!-- Grid row -->
+        <div class="row mt-3">
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mb-4">
+
+            <!-- Content -->
+            <h6 class="text-uppercase font-weight-bold">About Us</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>With over 4 decades of cumulative experience, ‘Conscience Investing’ Smallcase is actively managed by an
+              able team of professionals and advisors. The sole objective is to add maximum value to investors in their
+              wealth creation journey and aid in active and seamless portfolio management.</p>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+            <!-- Links -->
+            <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <a rel="noreferrer" href="https://conscience.smallcase.com/" target="_blank">SmallCase</a>
+            </p>
+
+            <p>
+              <a rel="noreferrer" href="https://conscience.smallcase.com/smallcase/CONMO_0003"
+                target="_blank">Curate</a>
+            </p>
+            <p>
+              <a rel="noreferrer" href="https://conscience.smallcase.com/smallcase/CONMO_0001"
+                target="_blank">Saatvic</a>
+            </p>
+            <!-- <p>
             <a href="http://consciencemfo.com/" target="_blank">Conscience MFO</a>
           </p> -->
-        </div>
-        <!-- Grid column -->
+          </div>
+          <!-- Grid column -->
 
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-3 col-xl-4 mx-auto mb-md-0 mb-4 footer__contact">
-          <h6 class="text-uppercase font-weight-bold">Contact</h6>
-          <!-- <p>
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-4 mx-auto mb-md-0 mb-4 footer__contact">
+            <h6 class="text-uppercase font-weight-bold">Contact</h6>
+            <!-- <p>
             <ion-icon name="pin-outline"></ion-icon> Workafella, 1/192,
             High Street Building,
             Mount Road, Teynampet,
             Chennai – 600 018
           </p> -->
-          <p>          
-            <a href=" mailto:consult@consciencemfo.com ">
-            <ion-icon name="mail-unread-outline"></ion-icon> consult@consciencemfo.com
-          </a>
-          </p>
-          <p>
-            <ion-icon name="call-outline"></ion-icon> +91-9840328752
-          </p>
-        </div>
-        <!-- Grid column -->
-
-      </div>
-      <!-- Grid row -->
-
-    </div>
-    <!-- Footer Links -->
-    <div style="background-color: #000;">
-      <div class="container">
-
-        <!-- Grid row-->
-        <div class="row py-4 d-flex align-items-center">
-
-          <!-- Grid column -->
-          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-            <h6 class="mb-0">
-              ©
-              <script type="text/javascript">
-                document.write(new Date().getFullYear());
-              </script>
-              Copyright:
-              <a rel="noreferrer" href="http://consciencemfo.com/" target="_blank"> Conscience Investing</a>
-            </h6>
+            <p>
+              <ion-icon name="mail-unread-outline"></ion-icon>
+              <a href=" mailto:consult@consciencemfo.com ">
+                consult@consciencemfo.com
+              </a>
+            </p>
+            <p>
+              <ion-icon name="call-outline"></ion-icon> +91-9840328752
+            </p>
           </div>
           <!-- Grid column -->
 
-          <!-- Grid column -->
-          <div class="col-md-6 col-lg-7 text-center text-md-right">
+        </div>
+        <!-- Grid row -->
+
+      </div>
+      <!-- Footer Links -->
+      <div style="background-color: #000;">
+        <div class="container">
+
+          <!-- Grid row-->
+          <div class="row py-4 d-flex align-items-center">
+
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+              <h6 class="mb-0">
+                ©
+                <script type="text/javascript">
+                  document.write(new Date().getFullYear());
+                </script>
+                Copyright:
+                <a rel="noreferrer" href="http://consciencemfo.com/" target="_blank"> Conscience Investing</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-7 text-center text-md-right">
 
 
-            <!-- Twitter -->
-            <!-- <a rel="noreferrer" class="tw-ic" style="font-size: 1.5rem;" href="http://consciencemfo.com/" target="_blank">
+              <!-- Twitter -->
+              <!-- <a rel="noreferrer" class="tw-ic" style="font-size: 1.5rem;" href="http://consciencemfo.com/" target="_blank">
               <ion-icon name="globe-outline"></ion-icon>
 
             </a> -->
 
-            <a rel="noreferrer" style="font-size: 1.5rem;" href="mailto:consult@consciencemfo.com " target="_blank">
-              <ion-icon name="mail-unread-outline"></ion-icon>
-            </a>
+              <a rel="noreferrer" style="font-size: 1.5rem;" href="mailto:consult@consciencemfo.com " target="_blank">
+                <ion-icon name="mail-unread-outline"></ion-icon>
+              </a>
 
-            <a style="font-size: 1.5rem;" href="tel:+91-9840328752" target="_blank">
-              <ion-icon name="call-outline"></ion-icon>
-            </a>
+              <a style="font-size: 1.5rem;" href="tel:+91-9840328752" target="_blank">
+                <ion-icon name="call-outline"></ion-icon>
+              </a>
+
+            </div>
+            <!-- Grid column -->
 
           </div>
-          <!-- Grid column -->
+          <!-- Grid row-->
 
         </div>
-        <!-- Grid row-->
-
       </div>
-    </div>
-    <!-- Copyright -->
-    <!-- <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <!-- Copyright -->
+      <!-- <div class="footer-copyright text-center py-3">© 2020 Copyright:
       <a href=""> Conscience MFO</a>
     </div> -->
-    <!-- Copyright -->
+      <!-- Copyright -->
 
-  </footer>
-  <!-- Footer -->
+    </footer>
+    <!-- Footer -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
-    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"
-    integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw=="
-    crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
-  <script src="./script.js"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"
+      integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw=="
+      crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script src="./script.js"></script>
+  </body>
 
 </html>
