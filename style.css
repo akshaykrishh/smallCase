@@ -31,11 +31,11 @@ button {
   cursor: pointer;
 }
 
-.lazyloading{
+.lazyloading {
   opacity: 0;
 }
 
-.lazyloaded{
+.lazyloaded {
   opacity: 1;
   transition: 0.5s;
 }
@@ -51,7 +51,7 @@ button {
   /* position: absolute; */
 }
 
-.navbar #mainMenu li>a {
+.navbar #mainMenu li > a {
   font-size: 20px;
   letter-spacing: 1px;
   color: #fff;
@@ -60,12 +60,12 @@ button {
   text-decoration: none;
 }
 
-.main-header.fixed-nav #mainMenu li>a {
+.main-header.fixed-nav #mainMenu li > a {
   color: #fff;
   text-decoration: none;
 }
 
-#mainMenu li>a::before {
+#mainMenu li > a::before {
   position: absolute;
   content: "";
   width: calc(100% - 1px);
@@ -84,8 +84,8 @@ button {
   transition: transform 0.5s ease;
 }
 
-#mainMenu li>a:hover::before,
-#mainMenu li>a.active::before {
+#mainMenu li > a:hover::before,
+#mainMenu li > a.active::before {
   -webkit-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
   transform: scale(1, 1);
@@ -94,7 +94,7 @@ button {
   transform-origin: left center;
 }
 
-.main-header.fixed-nav #mainMenu li>a::before {
+.main-header.fixed-nav #mainMenu li > a::before {
   background: #000;
 }
 
@@ -116,11 +116,11 @@ button {
   transition: all 0.4s ease;
 }
 
-.main-header.fixed-nav .navbar-brand>img:last-of-type {
+.main-header.fixed-nav .navbar-brand > img:last-of-type {
   display: block;
 }
 
-.main-header.fixed-nav .navbar-brand>img:first-of-type {
+.main-header.fixed-nav .navbar-brand > img:first-of-type {
   display: none;
 }
 
@@ -189,7 +189,7 @@ button {
     transform: translateY(-50%);
   }
 
-  .navbar #mainMenu li>a {
+  .navbar #mainMenu li > a {
     font-size: 2rem;
   }
 
@@ -577,7 +577,26 @@ button {
 .coinThree {
   position: relative;
   z-index: -1;
+}
 
+.curate_logo_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: center; */
+  margin-bottom: 1rem;
+}
+
+.curate_logo_wrapper img {
+  width: 200px;
+}
+
+#logo_space {
+  font-size: 60px;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.9;
+  margin: 0 10px;
 }
 
 .coinThree img {
@@ -636,6 +655,14 @@ button {
   cursor: pointer;
 }
 
+/* .curatePlus {
+  margin: 0;
+} */
+
+.curatePlusBtn span {
+  margin-left: 1rem;
+}
+
 @media only screen and (min-width: 694px) {
   .portfolio__card__inner {
     padding: 3rem 2.5rem 1rem;
@@ -679,6 +706,19 @@ button {
 @media only screen and (max-width: 480px) {
   .card__text p {
     font-size: 1rem;
+  }
+
+  .curate_logo_wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #logo_space {
+    display: none;
+  }
+
+  .curatePlusBtn span {
+    margin-left: 0rem;
   }
 
   .portfolio__title h1 {
@@ -748,7 +788,7 @@ button {
 
 .blue {
   height: 100vh;
-  background-color: #272B2D;
+  background-color: #272b2d;
 }
 
 .text-wrap {
@@ -856,7 +896,7 @@ button {
 
 .panel.red {
   z-index: 2;
-  background-color: #272B2D;
+  background-color: #272b2d;
   background-image: url("./imgs/svg/subscribe.svg");
   background-size: 60%;
 }
@@ -865,7 +905,7 @@ button {
   z-index: 3;
   background-color: #cf5d00;
   background-image: none;
-  background-color: #272B2D;
+  background-color: #272b2d;
   background-image: url("./imgs/svg/invest.svg");
   background-size: 60%;
 }
@@ -930,23 +970,22 @@ button {
     font-weight: 600;
     margin-top: 20px;
   }
-
 }
 /* ends */
 
 /* Team page */
-.about-container{
+.about-container {
   position: relative;
   /* margin-right: 5rem; */
   margin-top: 4rem;
 }
 
-.about-heading{
+.about-heading {
   /* text-align: center; */
   margin-bottom: 4rem;
 }
 
-.about-heading h1{
+.about-heading h1 {
   font-size: 6vw;
   /* text-transform: lowercase; */
   font-weight: 600;
@@ -1005,7 +1044,7 @@ button {
   text-align: justify;
 }
 
-.social-links a{
+.social-links a {
   display: inline-block;
   height: 32px;
   width: 32px;
@@ -1019,24 +1058,23 @@ button {
   transition: all 0.5s ease;
 }
 
-
-.social-links a:hover{
+.social-links a:hover {
   color: rgb(196, 196, 196);
-} 
+}
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 780px) {
   .profile .profile-img {
     height: 200px;
     width: 200px;
   }
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width: 480px) {
   .about-heading h1 {
     font-size: 3rem;
   }
 
-  .team-container{
+  .team-container {
     margin-top: 0;
   }
 
@@ -1059,10 +1097,10 @@ button {
   font-weight: 600;
 }
 
-input:focus~label,
-textarea:focus~label,
-input:valid~label,
-textarea:valid~label {
+input:focus ~ label,
+textarea:focus ~ label,
+input:valid ~ label,
+textarea:valid ~ label {
   font-size: 0.75em;
   color: #999;
   top: -5px;
@@ -1116,8 +1154,8 @@ textarea:focus {
   outline: 0;
 }
 
-input:focus~span,
-textarea:focus~span {
+input:focus ~ span,
+textarea:focus ~ span {
   width: 100%;
   -webkit-transition: all 0.075s ease;
   transition: all 0.075s ease;
@@ -1191,18 +1229,15 @@ textarea {
   .contact__mail {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-
   }
 
   .contact__mail ion-icon {
     margin-right: 20px;
   }
 
-
   .contact__address {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-
   }
 
   .contact__address p {
@@ -1230,12 +1265,12 @@ textarea {
   }
 }
 
-input[type="checkbox"]+label {
+input[type="checkbox"] + label {
   color: #ccc;
   font-style: italic;
 }
 
-input[type="checkbox"]:checked+label {
+input[type="checkbox"]:checked + label {
   color: #f00;
   font-style: normal;
 }
@@ -1258,6 +1293,6 @@ footer {
 
 @media (max-width: 480px) {
   .footer__contact {
-   display: none;
+    display: none;
   }
 }
