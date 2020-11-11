@@ -33,6 +33,13 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.1.5/lazysizes.min.js"></script>
     <link href="./style.css" rel=" stylesheet" />
@@ -257,44 +264,120 @@
               </div>
             </div>
           </section>
+          <div class="faqText">
+            <p>Need further inputs? Visit our <a href="https://conscience.smallcase.com/help" target="_blank">
+                <!-- <span style="padding-right: 5px;">FAQ</span> -->
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 172 172"
+                  style=" fill:#000000;">
+                  <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                    style="mix-blend-mode: normal">
+                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                    <g>
+                      <path
+                        d="M163.3742,165.378c-9.0859,-0.7095 -19.2683,-3.5733 -29.1454,-8.2431l-0.8256,-0.3913l-0.8557,0.3268c-7.2842,2.7735 -14.9855,4.1796 -22.8975,4.1796c-30.8224,0 -55.9,-21.2205 -55.9,-47.3c0,-26.0795 25.0776,-47.3 55.9,-47.3c30.8224,0 55.9,21.2205 55.9,47.3c0,10.8747 -4.4806,21.5043 -12.6205,29.9237l-1.0406,1.0793l0.6493,1.3459c3.5174,7.3143 7.1552,13.7084 10.836,19.0791z"
+                        fill="#e0b766"></path>
+                      <path
+                        d="M109.65,68.8c29.6399,0 53.75,20.253 53.75,45.15c0,10.32 -4.2656,20.4164 -12.0142,28.4273l-2.0812,2.1543l1.2986,2.7004c2.7563,5.7319 5.59,10.9091 8.4624,15.4886c-7.6325,-1.1481 -15.8713,-3.7238 -23.9209,-7.5293l-1.6555,-0.7826l-1.7114,0.6536c-7.0391,2.6789 -14.4824,4.0377 -22.1278,4.0377c-29.6399,0 -53.75,-20.253 -53.75,-45.15c0,-24.897 24.1101,-45.15 53.75,-45.15M109.65,64.5c-32.0608,0 -58.05,22.1407 -58.05,49.45c0,27.3093 25.9892,49.45 58.05,49.45c8.4323,0 16.426,-1.5652 23.6543,-4.3215c10.9478,5.1729 23.2372,8.6215 34.3957,8.6215c-5.0568,-6.6607 -9.4643,-14.5211 -13.2225,-22.3342c8.2603,-8.5398 13.2225,-19.4833 13.2225,-31.4158c0,-27.3093 -25.9892,-49.45 -58.05,-49.45z"
+                        fill="#ffffff"></path>
+                      <path
+                        d="M132.2981,134.4567h-11.4595l-3.3196,-10.3845h-16.6023l-3.2895,10.3845h-11.395l16.9936,-46.6851h12.47zM115.111,115.9968c0,0 -5.6416,-18.2621 -5.7964,-19.8918h-0.2623c-0.1075,1.3674 -5.891,19.8918 -5.891,19.8918z"
+                        fill="#ffffff"></path>
+                      <path
+                        d="M8.6258,105.178c3.6808,-5.3707 7.3186,-11.7648 10.836,-19.0791l0.6493,-1.3459l-1.0406,-1.0793c-8.1399,-8.4194 -12.6205,-19.049 -12.6205,-29.9237c0,-26.0795 25.0776,-47.3 55.9,-47.3c30.8224,0 55.9,21.2205 55.9,47.3c0,26.0795 -25.0776,47.3 -55.9,47.3c-7.912,0 -15.6133,-1.4061 -22.8932,-4.1796l-0.8557,-0.3268l-0.8256,0.3913c-9.8814,4.6698 -20.0638,7.5336 -29.1497,8.2431z"
+                        fill="#00b091"></path>
+                      <path
+                        d="M62.35,8.6c29.6399,0 53.75,20.253 53.75,45.15c0,24.897 -24.1101,45.15 -53.75,45.15c-7.6454,0 -15.0887,-1.3588 -22.1235,-4.0377l-1.7114,-0.6536l-1.6555,0.7826c-8.0496,3.8055 -16.2884,6.3812 -23.9209,7.5293c2.8724,-4.5795 5.7018,-9.7567 8.4624,-15.4886l1.2986,-2.7004l-2.0812,-2.1543c-7.7529,-8.0109 -12.0185,-18.1073 -12.0185,-28.4273c0,-24.897 24.1101,-45.15 53.75,-45.15M62.35,4.3c-32.0608,0 -58.05,22.1407 -58.05,49.45c0,11.9325 4.9622,22.876 13.2225,31.4158c-3.7582,7.8131 -8.1657,15.6735 -13.2225,22.3342c11.1585,0 23.4479,-3.4486 34.3957,-8.6215c7.2283,2.7563 15.222,4.3215 23.6543,4.3215c32.0608,0 58.05,-22.1407 58.05,-49.45c0,-27.3093 -25.9892,-49.45 -58.05,-49.45z"
+                        fill="#ffffff"></path>
+                      <g fill="#ffffff">
+                        <path
+                          d="M61.3481,77.3269c-6.4199,0 -11.653,-2.3177 -15.6993,-6.9488c-4.0463,-4.6784 -6.0673,-10.7371 -6.0673,-18.1718c0,-7.8518 2.0554,-14.2201 6.1619,-19.1092c4.0893,-4.8633 9.5288,-7.2971 16.3228,-7.2971c6.3984,0 11.5713,2.3263 15.5101,6.9832c3.9603,4.6311 5.9426,10.7715 5.9426,18.4126c0,7.8045 -2.0554,14.1169 -6.1619,18.9372c-0.1462,0.1634 -0.2795,0.3182 -0.4085,0.4687c-0.1247,0.1505 -0.2623,0.2967 -0.4085,0.4343l11.352,12.126h-14.1341l-5.9426,-6.7037c-1.9522,0.5762 -4.1108,0.8686 -6.4672,0.8686zM61.7867,35.4578c-3.5217,0 -6.3382,1.4835 -8.4409,4.4462c-2.0855,2.9412 -3.1261,6.8456 -3.1261,11.7089c0,4.9321 1.0406,8.8365 3.1261,11.7089c2.0855,2.8724 4.816,4.3086 8.1915,4.3086c3.483,0 6.2436,-1.3889 8.2861,-4.171c2.0425,-2.8251 3.0659,-6.7037 3.0659,-11.6401c0,-5.1428 -0.989,-9.159 -2.9713,-12.0572c-1.9608,-2.8681 -4.6698,-4.3043 -8.1313,-4.3043z">
+                        </path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>section</a> </p>
+          </div>
         </div>
       </div>
-      <div class="faqText">
-        <p>Need further inputs? Visit our <a href="https://conscience.smallcase.com/help" target="_blank">
-            <!-- <span style="padding-right: 5px;">FAQ</span> -->
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 172 172"
-              style=" fill:#000000;">
-              <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                style="mix-blend-mode: normal">
-                <path d="M0,172v-172h172v172z" fill="none"></path>
-                <g>
-                  <path
-                    d="M163.3742,165.378c-9.0859,-0.7095 -19.2683,-3.5733 -29.1454,-8.2431l-0.8256,-0.3913l-0.8557,0.3268c-7.2842,2.7735 -14.9855,4.1796 -22.8975,4.1796c-30.8224,0 -55.9,-21.2205 -55.9,-47.3c0,-26.0795 25.0776,-47.3 55.9,-47.3c30.8224,0 55.9,21.2205 55.9,47.3c0,10.8747 -4.4806,21.5043 -12.6205,29.9237l-1.0406,1.0793l0.6493,1.3459c3.5174,7.3143 7.1552,13.7084 10.836,19.0791z"
-                    fill="#e0b766"></path>
-                  <path
-                    d="M109.65,68.8c29.6399,0 53.75,20.253 53.75,45.15c0,10.32 -4.2656,20.4164 -12.0142,28.4273l-2.0812,2.1543l1.2986,2.7004c2.7563,5.7319 5.59,10.9091 8.4624,15.4886c-7.6325,-1.1481 -15.8713,-3.7238 -23.9209,-7.5293l-1.6555,-0.7826l-1.7114,0.6536c-7.0391,2.6789 -14.4824,4.0377 -22.1278,4.0377c-29.6399,0 -53.75,-20.253 -53.75,-45.15c0,-24.897 24.1101,-45.15 53.75,-45.15M109.65,64.5c-32.0608,0 -58.05,22.1407 -58.05,49.45c0,27.3093 25.9892,49.45 58.05,49.45c8.4323,0 16.426,-1.5652 23.6543,-4.3215c10.9478,5.1729 23.2372,8.6215 34.3957,8.6215c-5.0568,-6.6607 -9.4643,-14.5211 -13.2225,-22.3342c8.2603,-8.5398 13.2225,-19.4833 13.2225,-31.4158c0,-27.3093 -25.9892,-49.45 -58.05,-49.45z"
-                    fill="#ffffff"></path>
-                  <path
-                    d="M132.2981,134.4567h-11.4595l-3.3196,-10.3845h-16.6023l-3.2895,10.3845h-11.395l16.9936,-46.6851h12.47zM115.111,115.9968c0,0 -5.6416,-18.2621 -5.7964,-19.8918h-0.2623c-0.1075,1.3674 -5.891,19.8918 -5.891,19.8918z"
-                    fill="#ffffff"></path>
-                  <path
-                    d="M8.6258,105.178c3.6808,-5.3707 7.3186,-11.7648 10.836,-19.0791l0.6493,-1.3459l-1.0406,-1.0793c-8.1399,-8.4194 -12.6205,-19.049 -12.6205,-29.9237c0,-26.0795 25.0776,-47.3 55.9,-47.3c30.8224,0 55.9,21.2205 55.9,47.3c0,26.0795 -25.0776,47.3 -55.9,47.3c-7.912,0 -15.6133,-1.4061 -22.8932,-4.1796l-0.8557,-0.3268l-0.8256,0.3913c-9.8814,4.6698 -20.0638,7.5336 -29.1497,8.2431z"
-                    fill="#00b091"></path>
-                  <path
-                    d="M62.35,8.6c29.6399,0 53.75,20.253 53.75,45.15c0,24.897 -24.1101,45.15 -53.75,45.15c-7.6454,0 -15.0887,-1.3588 -22.1235,-4.0377l-1.7114,-0.6536l-1.6555,0.7826c-8.0496,3.8055 -16.2884,6.3812 -23.9209,7.5293c2.8724,-4.5795 5.7018,-9.7567 8.4624,-15.4886l1.2986,-2.7004l-2.0812,-2.1543c-7.7529,-8.0109 -12.0185,-18.1073 -12.0185,-28.4273c0,-24.897 24.1101,-45.15 53.75,-45.15M62.35,4.3c-32.0608,0 -58.05,22.1407 -58.05,49.45c0,11.9325 4.9622,22.876 13.2225,31.4158c-3.7582,7.8131 -8.1657,15.6735 -13.2225,22.3342c11.1585,0 23.4479,-3.4486 34.3957,-8.6215c7.2283,2.7563 15.222,4.3215 23.6543,4.3215c32.0608,0 58.05,-22.1407 58.05,-49.45c0,-27.3093 -25.9892,-49.45 -58.05,-49.45z"
-                    fill="#ffffff"></path>
-                  <g fill="#ffffff">
-                    <path
-                      d="M61.3481,77.3269c-6.4199,0 -11.653,-2.3177 -15.6993,-6.9488c-4.0463,-4.6784 -6.0673,-10.7371 -6.0673,-18.1718c0,-7.8518 2.0554,-14.2201 6.1619,-19.1092c4.0893,-4.8633 9.5288,-7.2971 16.3228,-7.2971c6.3984,0 11.5713,2.3263 15.5101,6.9832c3.9603,4.6311 5.9426,10.7715 5.9426,18.4126c0,7.8045 -2.0554,14.1169 -6.1619,18.9372c-0.1462,0.1634 -0.2795,0.3182 -0.4085,0.4687c-0.1247,0.1505 -0.2623,0.2967 -0.4085,0.4343l11.352,12.126h-14.1341l-5.9426,-6.7037c-1.9522,0.5762 -4.1108,0.8686 -6.4672,0.8686zM61.7867,35.4578c-3.5217,0 -6.3382,1.4835 -8.4409,4.4462c-2.0855,2.9412 -3.1261,6.8456 -3.1261,11.7089c0,4.9321 1.0406,8.8365 3.1261,11.7089c2.0855,2.8724 4.816,4.3086 8.1915,4.3086c3.483,0 6.2436,-1.3889 8.2861,-4.171c2.0425,-2.8251 3.0659,-6.7037 3.0659,-11.6401c0,-5.1428 -0.989,-9.159 -2.9713,-12.0572c-1.9608,-2.8681 -4.6698,-4.3043 -8.1313,-4.3043z">
-                    </path>
-                  </g>
-                </g>
-              </g>
-            </svg>section</a> </p>
-      </div>
+
     </div>
+
+    <section class="testimonials-section">
+      <div class="container-fluid px-lg-4 px-md-4">
+        <div class="testimonial-title container">
+          <h1>What Our <span>Clients</span> Says</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="testimonials">
+              <div class="owl-carousel" id="carousel1">
+                <div class="item">
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <h5>Venkat <br>
+                        <span>CEO, Chennai</span>
+                      </h5>
+                      <p class="card-text">"Have always had an issue with Mutual Funds and Portfolios not being actively
+                        managed by managers, as they should be. It's great to see the Conscience Investing team enabling
+                        'active management' in the true sense."</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <h5>Nandini <br>
+                        <span>Edtech Entrepreneur, Bangalore</span>
+                      </h5>
+                      <p class="card-text">"Unique portfolios and great mix of stocks. Seamless and super simple
+                        investing experience. Customised basket-investing is the next big thing. Good Luck Team!"</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <h5>Murali <br>
+                        <span>Serial Entrepreneur, Mumbai</span>
+                      </h5>
+                      <p class="card-text">"Love the Saatvic portfolio theme. Socially responsible investing is the need
+                        of the hour. More power to you guys!!"</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <h5>Catherine <br>
+                        <span>Healthcare Professional, Boston</span>
+                      </h5>
+                      <p class="card-text">"Investing into Indian equities, with the right research, experienced team
+                        and superior technology, has been a great experience.
+                        "</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <h5>Dr. Aishwarya<br>
+                        <span>Gurgaon</span>
+                      </h5>
+                      <p class="card-text">"Thank you for making stock investing so simple through your curated
+                        portfolios, especially for people like me who are not adept in investing principles and personal
+                        finance."</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <div class="team" id="team">
       <div class="about-container container">
@@ -677,6 +760,9 @@
       crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+      integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+      crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
       integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
       crossorigin="anonymous"></script>
