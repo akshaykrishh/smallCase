@@ -315,7 +315,7 @@ button {
 }
 
 .home__title h1 {
-  font-size: 7rem;
+  font-size: 6rem;
   color: #fff;
   font-weight: 600;
   line-height: 140px;
@@ -659,6 +659,10 @@ button {
 .portfolio__card__inner .curatePlusBtn span {
   margin-left: 1rem;
 }
+
+/* .portfolio__card__inner img:nth-of-type(s) {
+  margin-bottom: 1rem;
+} */
 
 @media only screen and (min-width: 694px) {
   .portfolio__card__inner {

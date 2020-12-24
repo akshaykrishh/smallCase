@@ -134,6 +134,10 @@ $(document).ready(function () {
 
     $('#carousel1').owlCarousel({
         loop:false,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        rewind: true,
         center: true,
         margin:0,
         responsiveClass: true,
